@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- External stylesheets and fonts -->
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="flex-1 flex-col font-poppins">
+    <!-- Header Section -->
+    <header
+      class="flex flex-1 flex-row justify-between items-center px-20 py-6 bg-white"
+    >
+      <div>
+        <!-- Site Logo -->
+        <img
+          class="rounded-lg cursor-pointer"
+          src="./assets/images/Logo.png"
+          alt="Site Logo"
+          onclick="logoClicked()"
+        />
+        <!-- JavaScript function to handle logo click -->
+        <script>
+          function logoClicked() {
+            window.location.reload();
+          }
+        </script>
+      </div>
+      <div>
+        <nav>
+          <ul class="flex-row flex items-center justify-around gap-4">
+            <li class="font-light"><a href="/src/index.html">Sign Up</a></li>
+            <li>
+              <!-- Log In Button -->
+              <a
+                href="/src/index.html"
+                class="bg-[#36F] py-2.5 px-5 rounded-[10px] text-white justify-center items-center"
+                >Log in</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-[#F7F5FD] p-24">
+      <div class="justify-between items-center flex-1 flex">
+        <!-- Text Content -->
+        <div class="justify-between items-center h-96 w-96">
+          <div>
+            <!-- Main Heading -->
+            <h2 class="text-6xl font-semibold leading-tight h-44 text-left">
+              Pet Store & Beyond
+            </h2>
+            <!-- Subheading -->
+            <p class="text-[#2D2D2D] opacity-50 h-20 text-start text-lg">
+              This is a sample Web page, Which I stole From Figma to test my
+              skills on HTML & CSS.
+            </p>
+          </div>
+          <!-- Call-to-action Button -->
+          <button type="button" class="bg-[#F8D57E] p-3 px-7 rounded-lg mt-10">
+            Get Started
+          </button>
+        </div>
+        <!-- Image Content -->
+        <img src="./assets/images/Image.png" alt="Dog Pic" />
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="bg-[#F2FAF8]">
+      <img
+        src="./assets/images/Video.png"
+        alt="Video Demo"
+        class="w-full object-cover"
+      />
+    </section>
+
+    <!-- Logo's Mini Section -->
+    <section
+      class="flex flex-1 flex-row justify-evenly p-40 h-48 w-full items-center"
+    >
+      <!-- Logo Images -->
+      <img src="./assets/svg/Nestle.svg" alt="Nestle svg" class="h-14" />
+      <img src="./assets/svg/Apple.svg" alt="Apple svg" class="h-14" />
+      <img src="./assets/svg/Beco.svg" alt="Beco svg" class="h-14" />
+      <img src="./assets/svg/Amazon.svg" alt="Amazon svg" class="h-14" />
+      <img src="./assets/svg/Google.svg" alt="Google svg" class="h-14" />
+      <img src="./assets/svg/Walmart.svg" alt="Walmart svg" class="h-14" />
+    </section>
+
+    <!-- Features Section -->
+    <section class="flex-1 flex-row px-24">
+      <div class="flex justify-evenly items-center w-full h-64">
+        <!-- Feature 1 -->
+        <div class="text-center">
+          <!-- Icon -->
+          <img
+            src="./assets/svg/Pet food icon.svg"
+            alt="Pet Food Icon"
+            class="h-16 mx-auto mb-4"
+          />
+          <!-- Feature Title -->
+          <h3 class="text-lg font-semibold mb-2">Best quality pet food</h3>
+          <!-- Feature Description -->
+          <p class="text-[#2D2D2D] opacity-50 text-base w-56">
+            Super delicious food. Available in a range of delicious flavors.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="text-center">
+          <!-- icon -->
+          <img
+            src="./assets/svg/Illustration.svg"
+            alt="Pet Food Icon"
+            class="h-16 mx-auto mb-4"
+          />
+          <!-- name -->
+          <h3 class="text-lg font-semibold mb-2">Toys & Accessories</h3>
+          <!-- some words -->
+          <p class="text-[#2D2D2D] opacity-50 text-base w-56">
+            Soft toys, chew toys, and rope toys. Strong, interactive, and fun.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="text-center">
+          <!-- icon -->
+          <img
+            src="./assets/svg/medic.svg"
+            alt="Pet Food Icon"
+            class="h-16 mx-auto mb-4"
+          />
+          <!-- name -->
+          <h3 class="text-lg font-semibold mb-2">Pets medical care</h3>
+          <!-- some words -->
+          <p class="text-[#2D2D2D] opacity-50 text-base w-56">
+            You can get a wide range of great treatments for your dog.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="text-center">
+          <!-- icon -->
+          <img
+            src="./assets/svg/scissor.svg"
+            alt="Pet Food Icon"
+            class="h-16 mx-auto mb-4"
+          />
+          <!-- name -->
+          <h3 class="text-lg font-semibold mb-2">Full service grooming</h3>
+          <!-- some words -->
+          <p class="text-[#2D2D2D] opacity-50 text-base w-56">
+            It's the right time to groom your dog with a variety of treatments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section Make a Carousel here 😢-->
+    <section
+      class="flex bg-[#ECE7FB] px-56 py-12 justify-between items-center flex-1 flex-row"
+    >
+      <!-- Testimonial Image -->
+      <img src="./assets/images/Image (Desktop).png" alt="Person Image" />
+      <div flex flex-1 flex-col>
+        <!-- Quotation SVG -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="56"
+          height="42"
+          viewBox="0 0 63 46"
+          fill="none"
+        >
+          <path
+            d="M0.5 30.4754C0.5 38.8003 6.61624 45.7661 13.7519 45.7661C..."
+          />
+        </svg>
+        <div class="h-7"></div>
+        <!-- Testimonial Content -->
+        <p class="w-[480px] h-36 font-semibold text-base">
+          We love using 'PETWORLD' products. Environmentally friendly and
+          sustainable...
+        </p>
+        <span class="font-light text-[#2D2D2D] opacity-50">Dylan Shaw</span>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-[#FCFAF5] p-40">
+      <div class="justify-between items-center flex-1 flex">
+        <!-- Text Content -->
+        <div class="justify-between items-center h-96 w-96">
+          <div>
+            <!-- Main Heading -->
+            <h2 class="text-6xl font-semibold leading-tight h-44 text-left">
+              Let's talk, woof
+            </h2>
+            <!-- Subheading -->
+            <p class="text-[#2D2D2D] opacity-50 h-20 text-start text-lg mt-3">
+              You can ask us questions about your pet, and we will be happy to
+              answer you!
+            </p>
+          </div>
+          <!-- Call-to-action Button -->
+          <button type="button" class="bg-[#F8D57E] p-3 px-7 rounded-lg">
+            Contact us
+          </button>
+        </div>
+
+        <!-- Image -->
+        <img src="./assets/images/puppy.png" alt="Dog Pic" />
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="flex flex-1 flex-row justify-between items-center px-20 py-2">
+        <!-- Left Part -->
+        <div class="h-96 w-[469px] p-10">
+          <!-- Site Logo -->
+          <img
+            class="rounded-lg mb-10"
+            src="./assets/images/Logo.png"
+            alt="Site Logo"
+            style="width: 100%; max-width: 200px"
+          />
+          <!-- Subscription Form and Information -->
+          <p class="text-base mb-4">
+            Stay updated with the latest news. Subscribe to receive updates
+            right to your inbox.
+          </p>
+          <!-- Subscription Form -->
+          <div class="flex flex-row items-baseline justify-start gap-3">
+            <!-- Email Input -->
+            <input
+              class="rounded-lg py-3 px-6 mt-2 border border-neutral-200"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              aria-label="email"
+            />
+            <!-- Subscribe Button -->
+            <button
+              class="bg-[#3366FF] py-3 px-6 rounded-lg text-white justify-between items-center cursor-pointer"
+            >
+              Subscribe
+            </button>
+          </div>
+          <!-- Additional Information -->
+          <div
+            class="flex flex-1 flex-row items-center justify-start gap-9 py-10 font-semibold text-sm"
+          >
+            <h3>© PETWORLD 2022</h3>
+            <h3>Privacy Policy</h3>
+            <h3>Terms of Use</h3>
+          </div>
+        </div>
+
+        <!-- Center Part -->
+        <div class="flex flex-1 flex-col justify-center items-center gap-5">
+          <!-- Heart Image and Credits -->
+          <img
+            src="https://avatars.githubusercontent.com/u/133247459?s=400&u=ddb44caf2631d5076930a3496804fb864f664c3e&v=4"
+            alt="Heart pic"
+            class="w-64 h-64 rounded-full object-cover cursor-not-allowed"
+          />
+          <h4>
+            Made With <span class="text-red-500 text-3xl">&#9829;</span> by King
+            Grey
+          </h4>
+        </div>
+
+        <!-- Right Part -->
+        <div>
+          <!-- Navigation Links Table -->
+          <table class="w-full">
+            <thead>
+              <tr>
+                <th
+                  class="py-3 pl-14 font-semibold text-start text-lg"
+                  colspan="1"
+                >
+                  Our story
+                </th>
+                <th
+                  class="py-3 pl-14 font-semibold text-start text-lg"
+                  colspan="1"
+                >
+                  Pet care
+                </th>
+                <th
+                  class="py-3 pl-14 font-semibold text-start text-lg"
+                  colspan="1"
+                >
+                  Shop
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="py-3 pl-14 font-medium text-lg cursor-pointer">
+                  FAQ
+                </td>
+                <td class="py-3 pl-14 font-medium text-lg cursor-pointer">
+                  Treatments
+                </td>
+                <td class="py-3 pl-14 font-medium text-lg cursor-pointer">
+                  Pet Food
+                </td>
+                <td class="py-3 lx14 font-medium text-lg cursor-pointer"></td>
+              </tr>
+              <tr>
+                <td class="py-3 pl-14 font-medium text-lg cursor-pointer">
+                  Contact
+                </td>
+                <td class="py-3 pl-14 font-medium text-lg cursor-pointer">
+                  Health
+                </td>
+                <td class="py-3 pl-14 font-medium text-lg cursor-pointer">
+                  Toys
+                </td>
+                <td class="py-3 pl-14 font-medium text-lg cursor-pointer"></td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td class="py-3 pl-14 font-medium text-lg cursor-pointer"></td>
+                <td class="py-3 pl-14 font-medium text-lg cursor-pointer">
+                  Hygiene
+                </td>
+                <td class="py-3 pl-14 font-medium text-lg cursor-pointer">
+                  Accessories
+                </td>
+                <td class="py-3 pl-14 font-medium text-lg cursor-pointer"></td>
+              </tr>
+            </tfoot>
+          </table>
+
+          <!-- Social Media Icons -->
+          <div>
+            <div class="flex flex-row items-center justify-end mt-7 gap-3">
+              <img
+                src="./assets/svg/facebook.svg"
+                alt="facebook"
+                class="h-8 mx-1 cursor-pointer"
+              />
+              <img
+                src="./assets/svg/linkedin.svg"
+                alt="linkedin"
+                class="h-7 mx-1 cursor-pointer"
+              />
+              <img
+                src="./assets/svg/instagram.svg"
+                alt="instagram"
+                class="h-7 mx-1 cursor-pointer"
+              />
+              <img
+                src="./assets/svg/twitter.svg"
+                alt="twitter"
+                class="h-7 mx-1 cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
